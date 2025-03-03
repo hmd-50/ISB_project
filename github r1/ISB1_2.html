@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<head>
+    <title>ISB1_2</title>
+    <style>
+      
+        table {
+          
+          border-style: solid;
+          border-color: blue;
+          border-width: 15px;
+           margin: auto;
+          
+        }
+
+         td {
+          border-style: solid;
+          border-color: blue;
+          border-width: 15px;
+            border-style: hidden;
+  padding: 15px;
+}
+
+      input,label{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        color: rgb(13, 13, 152);
+       padding-left: 60px;
+       padding-right: 60px;
+       padding-top: 15px;
+       padding-bottom: 15px;
+        margin-right: 25px;
+        
+      }
+
+ #email{
+    margin-right: 0px;
+ }
+#address{
+    margin-right: 48px;
+}
+
+button:hover{
+  
+  cursor: pointer;
+}
+        </style>
+    <script>
+        let dataArray = [];
+
+        function addToArray() {
+            // Get values from the input fields
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let phone = document.getElementById("phone").value;
+            let address = document.getElementById("address").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            // Push the data into the array if all fields are filled
+            if (fname && lname && phone && address && email && password) {
+                let entry = {
+                    fname: fname,
+                    lname: lname,
+                    phone: phone,
+                    address: address,
+                    email: email,
+                    password: password
+                };
+                dataArray.push(entry);
+
+                alert("Data added to array! Check the console for the output.");
+            } else {
+                alert("Please fill all fields.");
+            }
+
+            // Optionally, clear the fields after adding
+            document.getElementById("fname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+        }
+        function displayArray() {
+            let displayArea = document.getElementById("display");
+            displayArea.innerHTML = "";
+            dataArray.forEach((entry, index) => {
+                displayArea.innerHTML += `<p><strong>رقم الدخول ${index + 1}:</strong> الاسم الاول:
+                     ${entry.fname}, اسم العائلة: ${entry.lname}, رقم الهاتف: ${entry.phone},عنوان المنزل: ${entry.address}
+                     , البريد الاكتروني: ${entry.email}, رمز المرور: ${entry.password}</p>`;
+            });
+        }
+        function clearNames() {
+            dataArray = [];
+            document.getElementById("display").innerHTML = "";
+            alert("All names have been cleared!");
+        }
+    </script>
+</head>
+<body dir="rtl">
+        <table>
+         <caption id=rrr style="color: aqua; "><h2>نموذج النضمام</h2></caption>
+         
+         <tr>     
+         
+         <td>
+            <label for="fname">الاسم الاول</label>
+            <input type="text" id="fname" placeholder="  ادخل  الاسم الاول ">
+
+ 
+         </td><!--الخلية-->
+         
+         <td>
+            <label for="lname">اسم العائلة</label>
+            <input type="text" id="lname" placeholder="  ادخل  اسم العائلة ">
+
+
+          
+
+         </td>
+         </tr>
+         
+         <tr>     
+         
+             <td>
+                <label  for="phone">رقم الهاتف</label>
+                <input type="text" id="phone" placeholder="  ادخل  رقم الهاتف "required maxlength="10"
+                required minlength="10">
+
+             </td><!--الخلية-->
+             
+             <td>
+                <label for="address">العنوان</label>
+                <input type="text" id="address" placeholder="  ادخل  عنوان المنزل ">
+
+
+             </td>
+             </tr><tr>     
+         
+                 <td>
+                     <label for="email">البريد الاكتروني</label>
+                     <input class="inp" type="email" id="email" placeholder="  ادخل  البريد الاكتروني ">
+
+         
+                 </td><!--الخلية-->
+                 
+                 <td>
+                     <label for="password">كلمة المرور</label>
+            <input class="inp"  type="password" id="password" placeholder="  ادخل  رمز المرور ">
+
+                 </td>
+                 </tr>   
+         
+                 <tr> 
+                     <td>  
+                        <button onclick="addToArray()">اضافة</button>
+                     </td> 
+                  
+                     <td>
+                        <button  onclick="displayArray()" >عرض </button>
+                    </td>
+
+                    <td>
+                        <button onclick="clearNames()">مسح القائمة</button>
+                    </td>
+                  </tr>
+                  
+ <tr>
+    <td onabort="2"><h2>البيانات المخزنة</h2>
+        <div id="display"></div></td>
+ </tr>
+
+         </table>
+
+
+     
+
+
+
+
+</body>
+</html>
