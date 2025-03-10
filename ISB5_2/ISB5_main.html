@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<head lang="ar">
+    <title>ISB5_main</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+            background: linear-gradient(0deg, rgba(230,170,14,0.9654455532212886) 3%, rgba(195,94,34,1) 50%, rgba(221,145,56,1) 63%);
+        }
+
+        .ISB5 {
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+           background: rgb(193, 158, 32);
+        /*    background: radial-gradient(circle, rgba(220,251,63,1) 0%, rgba(106,173,173,1) 32%, rgba(149,252,70,1) 100%);*/
+        }
+        .ISB5 input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .ISB5 button {
+          border-radius: 54px;
+        background: linear-gradient(315deg, #b7a30b, #b0b016);
+            cursor: pointer;
+            width: 100px;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .ISB5 button:hover {
+            background: #0056b3;
+        }
+
+            
+    
+    </style>
+        <script>
+function logout() {
+            
+            
+                alert("سيتم الخروج ومسح جميع البيانات المخزنة");
+                localStorage.clear('users')
+//document.getElementById("output").innerHTML = "  ";
+window.location.replace("ISB5_login.html",);
+
+               // window.location.href = "http://127.0.0.1:5500/ISB4_2.html"; // Change to your desired page   
+                         
+        }
+
+       
+            
+        </script>
+</head>
+<body>
+    <div class="ISB5">
+        <h2 id="title">تسجيل الخروج</h2>
+        <button id="b" onclick="logout()">logout</button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+    
+        body{
+            background: rgb(230,170,14);
+            background: linear-gradient(0deg, rgba(230,170,14,0.9654455532212886) 3%, rgba(195,94,34,1) 50%, rgba(221,145,56,1) 63%);
+
+        }
+        
+        section {
+            display: flex;
+            height: 100vh;
+        }
+        .imgbg {
+            width: 50%;
+            height: 100%;
+        }
+        .imgbg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .contform {
+            width: 60%;
+        }
+        .logo {
+            width: 170px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .contform h2 {
+            
+            color: #b81515;
+            /*border-bottom: 4px solid #b8159d;*/
+            margin-bottom: 20px;
+        }
+        .contform .inform {
+            margin-bottom: 20px;
+        }
+        .contform label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contform input {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            outline: none;
+           /* background-color: darkgrey;*/
+        }
+        .button button {
+            width: 80px;
+            height: 35px;
+            border-radius: 20px;
+            margin: 5px;
+            background-color: darkgoldenrod;
+        }

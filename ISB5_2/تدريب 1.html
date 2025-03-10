@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+تدريب html 1
+</title>
+
+<style>
+   table,th,td{border: 1px solid seagreen;}
+</style> <!--table يهتم بشكل-->
+</head>
+
+
+ <body dir="rtl">
+    
+    <h1> title </h1><!--وصف للمبرمج-->
+<h2> suptitle </h2>
+ 
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Latin_letter_H.svg" height="150" width="150" alt="no img">
+
+
+
+<p>
+
+كتابة جملة عادية
+
+<b>
+   تخلي الكلام غامق
+</b>
+<br><!--سطر جديد-->
+
+<i>يخلي الخط مايل</i>
+
+<sub> يخلي الكلمة تحت مستوئ السطر</sub>
+
+
+<sup> يخلي الكلمة فوق مستوئ السطر</sup>
+
+<hr><!--يرسم سطر-->
+</p>
+
+<h2>القوائم</h2>
+<ol>
+
+<li> الرقم 1</li>
+<li> الرقم 2</li>
+<li> الرقم 3</li>
+</ol>
+
+<h2>القوائم  2   </h2>
+<ol type="A">
+
+<li> الرقم 1</li>
+<li> الرقم 2</li>
+<li> الرقم 3</li>
+</ol>
+
+<h2>القوائم  الغير مرتبة   </h2>
+
+<ul type="circle">
+
+   <li> الرقم 1</li>
+   <li> الرقم 2</li>
+   <li> الرقم 3</li>
+
+
+</ul>
+
+<p>
+
+<a href="https://translate.google.com.sa/?hl=ar&sl=auto&tl=ar&op=translate"> اضغط هنا</a><!--الرابط نفسه href  يمثل-->
+
+</p>
+
+
+<video width="100" height="100" controls >
+ <source src="https://youtu.be/NkE3t4ZrUGQ" type="video/mp4">
+ <source src="https://youtu.be/NkE3t4ZrUGQ" type="video/ogg">
+ لا يمكن عرض الفديو
+</video>
+<br>
+<br>
+
+
+<audio controls>
+   <source src="myPodcast.mp3" type="audio/mpeg">
+   <source src="myPodcast.ogg" type="audio/ogg">
+   لا يمكن عرض المقطع الصوتي
+</audio>
+   
+   
+<table>
+<caption>جدول الحضور</caption>
+<tr><!--الصف-->
+<th>اليوم</th><!--العمود-->
+<th>المكان</th>
+</tr>
+
+<tr>     
+
+<td>الاحد والاثنين</td><!--الخلية-->
+<td>class A</td>
+</tr>
+<tr>     
+   <td>الثلاثاء و الاربعاء</td>
+<td>class B</td>
+
+</tr>
+<tr> 
+   <td colspan="2"> الخميس عن بعد</td> <!-- بدمج اكثر من خلية  colspan يسمح استخدم -->
+
+</tr>
+
+
+
+</table>
+
+
+
+<h2>نموذج النضمام للدورة</h2>
+
+<form action="">
+<label for="name">اسم المستخدم</label>
+   <input type="text" id="name">
+</form><!-- هو id و for هو input و label الي يجمع -->
+
+<form action="">
+
+<input type="radio" id="male" name="gender"><!-- name لازم يكون نفس نوع radio كل اختيارات -->
+<label for="male">ذكر</label>
+<input type="radio" id="female" name="gender">
+<label for="female">انثى</label>
+
+</form>
+
+<form action="">
+
+<p> من اين سمعت عن html</p>
+<input type="checkbox" id="friend" name="friend">
+<label for="friend">صديق</label><br>
+<input type="checkbox" id="book" name="book">
+<label for="book">كتاب</label><br>
+<input type="checkbox" id="social media" name="social media">
+<label for="social media">مواقع التوصل</label>
+
+<br>
+<label for="city">اختر موق المسكن</label><br>
+<select name="city" id="city">
+<option value="riyadh">الرياض </option>
+<option value="dammam">الدمام </option>
+<option value="jeddah">جدة </option>
+
+</select>
+
+<br>
+<input type="submit" value="انضمام">
+
+
+
+
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>ISB5_signup</title>
+    <link rel="stylesheet" href="ISB5_signup.css">
+    <script src="ISB5_signup.js"></script>
+
+</head>
+<body>
+    <div class="content">
+       
+            <h2 id="title">التسجيل</h2>
+
+                <label id="lname" for="name">اسم المستخدم </label>
+                <input   type="text" id="name"
+                placeholder="الرجاء ادخال الاسم الاول">
+
+    
+            
+                        <label id="lpassword" for="password">كلمة المرور</label>
+               <input   type="password" id="password"placeholder="الرجاء ادخال رمز المرور ">
+
+                     
+    
+               <button  id="b3" onclick="saveData()">حفظ</button>
+               <button id="b2" onclick="showData()">عرض</button><br>
+               <button id="b1" onclick="Language()">عربي</button>
+               <button  id="b4" onclick="clearData()">مسح</button><br>
+               <button  id="b5" onclick="loginpage()">صفحة تسجيل الدخول</button>
+
+                     
+            <h2 id="sh">جدول البيانات</h2>
+            <p id="output"></p>
+    </div>
+</body>
+</html>
